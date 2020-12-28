@@ -13,7 +13,9 @@ var digitos= binario.length;
 var selectIngresado=document.getElementById('selectIngresado').value;
 var selectResultado=document.getElementById('selectResultado').value;
 
-if(selectIngresado=="Binario" && selectResultado=="Decimal")
+if(selectIngresado==selectResultado)
+	resultado.value=binario;
+else if(selectIngresado=="Binario" && selectResultado=="Decimal")
 	resultado.value=binarioDecimal(binario);
 else if(selectIngresado=="Hexadecimal" && selectResultado=="Decimal")
 	resultado.value=hexadecimalDecimal(binario);
@@ -143,7 +145,7 @@ function hexadecimalDecimal(numero)
 	 	
 	for(i=0; i<numero.length; i++)
 	{
-		
+
 	valor=numero[i];
 
 		if(letras.includes(numero[i]))

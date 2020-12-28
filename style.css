@@ -20,7 +20,7 @@ input
 
 }
 
-select
+select, option
 {
 	border-radius: 7px 7px 7px 7px;
 }
@@ -35,6 +35,6 @@ table{
 	margin-top: -18px;
 	margin-left: 12px;
 	font-size: 15px;
-	color:red;
+	color:grey;
 
 }
