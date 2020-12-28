@@ -1,9 +1,13 @@
 
 
 body{
-	padding: 20px 100px;
+	padding:100px 100px;
 }
 
+h1
+{
+
+}
 td{
 	padding: 10px;
 	text-align: center;
@@ -16,6 +20,21 @@ input
 
 }
 
+select
+{
+	border-radius: 7px 7px 7px 7px;
+}
+
 table{
-	margin-top: 140px;
+	margin-top: 70px;
+}
+
+
+.error{
+	text-align: left;
+	margin-top: -18px;
+	margin-left: 12px;
+	font-size: 15px;
+	color:red;
+
 }

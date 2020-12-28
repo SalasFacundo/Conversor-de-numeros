@@ -120,7 +120,7 @@ function decimalBinario(numero)
 	restos.push(numero);
 	
 
-		return reverse(restos);
+	return reverse(restos);
 	
 	
 }
@@ -134,13 +134,18 @@ function hexadecimalDecimal(numero)
 	 j=0;
 	 numero=reverse(numero);
 
+	let element = document.getElementById("errorIngresado");
+	element.innerHTML="";
+
 	 var hexa = {"A":"10","B":"11","C":"12","D":"13","E":"14","F":"15"};
 	 var letras= ["a","b","c","d","e","f"];
 
 	 	
 	for(i=0; i<numero.length; i++)
 	{
-	valor=numero[i];		
+		
+	valor=numero[i];
+
 		if(letras.includes(numero[i]))
 			valor=numero[i].toUpperCase();
 		
@@ -156,16 +161,15 @@ function hexadecimalDecimal(numero)
 	return acu;
 }
 
-
-
-
-
 function binarioDecimal(numero){
 
 	 acu=0;
 	 j=0;
 	 flag=true;
 	 numero=reverse(numero);
+
+	 let element = document.getElementById("errorIngresado");
+	element.innerHTML="";
 
 	
 	for(i=0; i<numero.length; i++)
@@ -179,7 +183,12 @@ function binarioDecimal(numero){
 	}
 
 	if(flag==false)
-		acu=-1;
+	{		
+		acu=null;
+		
+		element.innerHTML = "Los caracteres tienen que ser 1 o 0";
+     
+	}	
 	return acu;
 
 }
@@ -188,6 +197,8 @@ function binarioDecimal(numero){
 
 function octalDecimal(numero)
 {
+	let element = document.getElementById("errorIngresado");
+	element.innerHTML="";
 
 		acu=0;
 	 j=0;
@@ -213,8 +224,9 @@ function octalDecimal(numero)
 
 	if(flag==false)
 	{
-		alert("Numero invalido");
-		acu=-1;
+		acu=null;
+		
+		element.innerHTML = "Los caracteres tienen que ser del 0 al 7";
 	}
 	return acu;
 
