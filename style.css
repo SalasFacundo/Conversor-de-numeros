@@ -1,0 +1,17 @@
+
+
+body{
+	padding: 20px 100px;
+}
+
+td{
+	padding: 10px;
+	text-align: center;
+}
+
+input
+{
+	width: 450px;
+	border-radius: 7px 7px 7px 7px;
+
+}
